@@ -1,9 +1,9 @@
+import "./styles/globals.css";
+import "./styles/theme.css";
+
+import { MainTemplate } from "./templates/MainTemplate";
 function App() {
-  return (
-    <>
-      <h1>ola</h1>
-    </>
-  );
+  return <MainTemplate />;
 }
 
 export default App;
