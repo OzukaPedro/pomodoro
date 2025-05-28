@@ -32,6 +32,7 @@
 
   --text-default: #e6e9f0;
   --text-muted: #aab3cc;
+  --text-placeholder: #c2c2c2;
 
   --disabled: #555f7d;
   --text-disabled: #aab3cc;
@@ -52,6 +53,7 @@
   --text-over-primary: #e6e9f0;
   --text-default: #0a0f1a;
   --text-muted: #272f43;
+  --text-placeholder: #2c2c2c;
 
   --link-color: #7510b9;
   --link-hover: #620b8a;

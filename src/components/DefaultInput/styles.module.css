@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+}
+.input {
+  background-color: transparent;
+
+  text-align: center;
+  padding: 0.8rem;
+  color: var(--text-default);
+  outline: none;
+  border: 0.2rem solid transparent;
+  border-bottom: 0.2rem solid var(--link-color);
+  transition: all 0.2s ease-in-out;
+  border-radius: 0.3rem;
+}
+
+.input:focus {
+  border: 0.2rem solid var(--link-color);
+  border-radius: 0.8rem;
+}
+
+.input::placeholder {
+  color: var(--text-placeholder);
+  font-size: 1.4rem;
+  font-style: italic;
+}
+
+input:disabled {
+  border-bottom: 0.2rem solid var(--disabled);
+  color: var(--text-muted);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}

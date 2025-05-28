@@ -1,5 +1,4 @@
 import { Container } from "../../components/Container";
-import { CountDown } from "../../components/CountDown";
 import { MainForm } from "../../components/MainForm";
 import type { TaskStateModel } from "../../models/TypeStateModel";
 import { MainTemplate } from "../../templates/MainTemplate";
@@ -11,9 +10,7 @@ export type HomeProps = {
 export function Home() {
   return (
     <MainTemplate>
-      <Container>
-        <MainForm />
-      </Container>
+      <MainForm />
     </MainTemplate>
   );
 }

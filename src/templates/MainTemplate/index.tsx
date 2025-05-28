@@ -8,15 +8,14 @@ type MainTemplateProps = {
 
 export function MainTemplate({ children }: MainTemplateProps) {
   return (
-    <>
+    <div>
       <CountDown />
       <Container>
         <Logo />
 
         <Menu />
-
         {children}
       </Container>
-    </>
+    </div>
   );
 }

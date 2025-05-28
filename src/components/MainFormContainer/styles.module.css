@@ -1,0 +1,4 @@
+.mainFormContainer {
+  display: flex;
+  flex-direction: column;
+}

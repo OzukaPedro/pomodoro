@@ -31,6 +31,9 @@ export function Menu() {
       return nextTheme;
     });
   }
+  function handleTest(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    event.preventDefault();
+  }
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -39,13 +42,25 @@ export function Menu() {
   return (
     <>
       <div className={styles.menu}>
-        <a className={styles.menuLink} href="">
+        <a
+          onClick={(event) => handleTest(event)}
+          className={styles.menuLink}
+          href=""
+        >
           <HomeIcon />
         </a>
-        <a className={styles.menuLink} href="">
+        <a
+          onClick={(event) => handleTest(event)}
+          className={styles.menuLink}
+          href=""
+        >
           <HistoryIcon />
         </a>
-        <a className={styles.menuLink} href="">
+        <a
+          onClick={(event) => handleTest(event)}
+          className={styles.menuLink}
+          href=""
+        >
           <SettingsIcon />
         </a>
         <a
@@ -53,7 +68,7 @@ export function Menu() {
           className={styles.menuLink}
           href=""
         >
-          {theme === "dark" ? <SunIcon /> : <MoonIcon />}
+          {nextThemeIcon[theme]}
         </a>
       </div>
     </>
