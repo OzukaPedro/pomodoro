@@ -1,8 +1,7 @@
 .mainTemplate {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-inline: 10rem;
-  width: 200vh;
   height: 100vh;
+  width: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

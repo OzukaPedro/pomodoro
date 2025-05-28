@@ -1,5 +1,6 @@
 import { Container } from "../../components/Container";
 import { CountDown } from "../../components/CountDown";
+import { Menu } from "../../components/Menu";
 import styles from "./styles.module.css";
 export function MainTemplate() {
   return (
@@ -8,7 +9,7 @@ export function MainTemplate() {
         <CountDown />
       </Container>
       <Container>
-        <h1>oi</h1>
+        <Menu />
       </Container>
     </div>
   );

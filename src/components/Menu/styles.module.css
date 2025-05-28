@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.menuLink {
+  background-color: var(--link-color);
+  text-decoration: none;
+  color: var(--text-over-primary);
+  padding: 1.6rem;
+  transition: all 0.2s ease-in-out;
+  border-radius: 0.8rem;
+  border-color: var(--link-border-color);
+  border-style: solid;
+  border-width: 0.1rem;
+}
+
+.menuLink:hover {
+  background-color: var(--link-hover);
+}
