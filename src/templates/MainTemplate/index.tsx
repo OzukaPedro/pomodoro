@@ -1,16 +1,22 @@
 import { Container } from "../../components/Container";
 import { CountDown } from "../../components/CountDown";
+import { Logo } from "../../components/Logo";
 import { Menu } from "../../components/Menu";
-import styles from "./styles.module.css";
-export function MainTemplate() {
+type MainTemplateProps = {
+  children: React.ReactNode;
+};
+
+export function MainTemplate({ children }: MainTemplateProps) {
   return (
-    <div className={styles.mainTemplate}>
+    <>
+      <CountDown />
       <Container>
-        <CountDown />
-      </Container>
-      <Container>
+        <Logo />
+
         <Menu />
+
+        {children}
       </Container>
-    </div>
+    </>
   );
 }

@@ -13,12 +13,21 @@ body {
   font-size: 1.6rem;
   background-color: var(--gray-900);
   color: var(--text-default);
-  width: 200vh;
-  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(
     to right,
     var(--gray-900),
     var(--gray-700),
     var(--gray-500)
   );
+}
+
+body div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24rem;
+  max-width: 100%;
 }

@@ -11,6 +11,9 @@
   color: var(--text-over-primary);
   padding: 1.6rem;
   transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 0.8rem;
   border-color: var(--link-border-color);
   border-style: solid;
