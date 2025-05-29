@@ -1,6 +1,8 @@
 import { Container } from "../../components/Container";
 import { CountDown } from "../../components/CountDown";
+import { Footer } from "../../components/Footer";
 import { Logo } from "../../components/Logo";
+import { MainContainer } from "../../components/MainContainer";
 import { Menu } from "../../components/Menu";
 type MainTemplateProps = {
   children: React.ReactNode;
@@ -9,14 +11,19 @@ type MainTemplateProps = {
 export function MainTemplate({ children }: MainTemplateProps) {
   return (
     <>
-      <Container>
-        <CountDown />
-      </Container>
-      <Container>
-        <Logo />
+      <MainContainer>
+        <Container>
+          <CountDown />
+        </Container>
+        <Container>
+          <Logo />
 
-        <Menu />
-        {children}
+          <Menu />
+          {children}
+        </Container>
+      </MainContainer>
+      <Container>
+        <Footer />
       </Container>
     </>
   );
