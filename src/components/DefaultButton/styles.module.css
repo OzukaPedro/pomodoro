@@ -1,0 +1,30 @@
+.button {
+  padding: 0.8rem;
+  background-color: var(--link-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4.8rem 0;
+  min-width: 24rem;
+  cursor: pointer;
+  border: solid;
+  border-width: 1px;
+  border-color: var(--text-default);
+  border-radius: 0.8rem;
+}
+.button:hover {
+  filter: brightness(80%);
+}
+.button svg {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+.red {
+  background-color: var(--error);
+  color: var(--text-over-primary);
+}
+
+.green {
+  background-color: var(--primary);
+  color: var(--text-over-primary);
+}

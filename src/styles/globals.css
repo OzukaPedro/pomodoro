@@ -14,7 +14,6 @@ body {
   background-color: var(--gray-900);
   color: var(--text-default);
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-image: linear-gradient(
     to right,
@@ -24,10 +23,21 @@ body {
   );
 }
 
-body div {
+body > div {
+  width: 100%;
+  max-width: 1200px; /* ou 960px, depende do seu layout */
+  margin: 0 auto; /* centraliza o conteúdo */
+  padding: 2rem; /* espaçamento interno para respiro */
   display: flex;
+  flex-wrap: wrap; /* permite quebra de linha em telas pequenas */
   align-items: center;
   justify-content: space-between;
-  width: 100%;
-  height: 100%;
+}
+
+@media (max-width: 768px) {
+  body > div {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: stretch;
+  }
 }
