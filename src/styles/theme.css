@@ -9,6 +9,10 @@
   --gray-800: #181f2e;
   --gray-900: #0a0f1a;
 
+  --gray-500-transparent: rgba(69, 79, 106, 0.623);
+  --gray-700-transparent: rgba(39, 47, 67, 0.733);
+  --gray-900-transparent: rgba(10, 15, 26, 0.795);
+
   --primary-light: #4de7b7;
   --primary: #0da170;
   --primary-dark: #065f46;
@@ -48,6 +52,10 @@
   --gray-700: #aab3cc;
   --gray-800: #cdd3e1;
   --gray-900: #e6e9f0;
+
+  --gray-500-transparent: rgba(69, 79, 106, 0.877);
+  --gray-700-transparent: rgba(170, 179, 204, 0.904);
+  --gray-900-transparent: rgba(230, 233, 240, 0.171);
 
   --link-border-color: #0a0f1a;
   --text-over-primary: #e6e9f0;

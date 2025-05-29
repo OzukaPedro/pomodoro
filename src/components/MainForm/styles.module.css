@@ -4,10 +4,16 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  background-color: aliceblue;
+  width: 100%;
+  padding-block: 3rem;
+  margin-bottom: 10rem;
+  background-image: linear-gradient(
+    to right,
+    var(--gray-500-transparent),
+    var(--gray-700-transparent),
+    var(--gray-900-transparent)
+  );
+  border-radius: 1rem;
+  border-style: solid;
 }
